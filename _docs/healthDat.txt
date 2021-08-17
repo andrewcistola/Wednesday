@@ -1,0 +1,113 @@
+healthDat.csv Documentation
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 15000 entries, 0 to 14999
+Data columns (total 29 columns):
+ #   Column                     Non-Null Count  Dtype  
+---  ------                     --------------  -----  
+ 0   PatientID                  15000 non-null  object 
+ 1   Age                        15000 non-null  float64
+ 2   CC_Count                   15000 non-null  int64  
+ 3   HP_Paid                    15000 non-null  float64
+ 4   Gender                     15000 non-null  object 
+ 5   ER_Count                   15000 non-null  int64  
+ 6   CC_Arthritis               15000 non-null  int64  
+ 7   CC_Asthma                  15000 non-null  int64  
+ 8   CC_Atrial_Fibrillation     15000 non-null  int64  
+ 9   CC_Autism                  15000 non-null  int64  
+ 10  CC_Cancer                  15000 non-null  int64  
+ 11  CC_COPD                    15000 non-null  int64  
+ 12  CC_Dementia                15000 non-null  int64  
+ 13  CC_Depression              15000 non-null  int64  
+ 14  CC_Diabetes                15000 non-null  int64  
+ 15  CC_Heart_Failure           15000 non-null  int64  
+ 16  CC_Hepatitis               15000 non-null  int64  
+ 17  CC_HIV_AIDS                15000 non-null  int64  
+ 18  CC_Hyperlipidemia          15000 non-null  int64  
+ 19  CC_Hypertension            15000 non-null  int64  
+ 20  CC_Ischemic_Heart_Disease  15000 non-null  int64  
+ 21  CC_Kidney_Disease          15000 non-null  int64  
+ 22  CC_Osteoporosis            15000 non-null  int64  
+ 23  CC_Schizophrenia           15000 non-null  int64  
+ 24  CC_Stroke                  15000 non-null  int64  
+ 25  ER_Copay                   15000 non-null  object 
+ 26  PCP_Copay                  15000 non-null  object 
+ 27  IP_Visits                  15000 non-null  int64  
+ 28  Zip                        15000 non-null  int64  
+dtypes: float64(2), int64(23), object(4)
+memory usage: 3.3+ MB
+
+
+Table name in `_data/project.db`: healthDat
+
+                Age      CC_Count        HP_Paid      ER_Count  CC_Arthritis  \
+count  15000.000000  15000.000000   15000.000000  15000.000000  15000.000000   
+mean      32.586677      0.588000   16410.266500      1.085600      0.012867   
+std       11.709808      0.997558   23128.420024      1.500585      0.112703   
+min       16.000000      0.000000      97.340000      0.000000      0.000000   
+25%       23.912231      0.000000    4608.905000      0.000000      0.000000   
+50%       29.573949      0.000000    9328.580000      0.000000      0.000000   
+75%       38.123720      1.000000   18928.665000      2.000000      0.000000   
+max       77.671854     18.000000  500000.000000      9.000000      1.000000   
+
+          CC_Asthma  CC_Atrial_Fibrillation     CC_Autism     CC_Cancer  \
+count  15000.000000            15000.000000  15000.000000  15000.000000   
+mean       0.060533                0.023467      0.029067      0.033467   
+std        0.238480                0.151385      0.167999      0.179858   
+min        0.000000                0.000000      0.000000      0.000000   
+25%        0.000000                0.000000      0.000000      0.000000   
+50%        0.000000                0.000000      0.000000      0.000000   
+75%        0.000000                0.000000      0.000000      0.000000   
+max        1.000000                1.000000      1.000000      1.000000   
+
+            CC_COPD   CC_Dementia  CC_Depression   CC_Diabetes  \
+count  15000.000000  15000.000000   15000.000000  15000.000000   
+mean       0.045267      0.010800       0.040467      0.027200   
+std        0.207895      0.103364       0.197058      0.162671   
+min        0.000000      0.000000       0.000000      0.000000   
+25%        0.000000      0.000000       0.000000      0.000000   
+50%        0.000000      0.000000       0.000000      0.000000   
+75%        0.000000      0.000000       0.000000      0.000000   
+max        1.000000      1.000000       1.000000      1.000000   
+
+       CC_Heart_Failure  CC_Hepatitis   CC_HIV_AIDS  CC_Hyperlipidemia  \
+count       15000.00000  15000.000000  15000.000000       15000.000000   
+mean            0.04160      0.016600      0.009667           0.050533   
+std             0.19968      0.127771      0.097846           0.219050   
+min             0.00000      0.000000      0.000000           0.000000   
+25%             0.00000      0.000000      0.000000           0.000000   
+50%             0.00000      0.000000      0.000000           0.000000   
+75%             0.00000      0.000000      0.000000           0.000000   
+max             1.00000      1.000000      1.000000           1.000000   
+
+       CC_Hypertension  CC_Ischemic_Heart_Disease  CC_Kidney_Disease  \
+count     15000.000000               15000.000000       15000.000000   
+mean          0.053600                   0.041533           0.023067   
+std           0.225234                   0.199527           0.150120   
+min           0.000000                   0.000000           0.000000   
+25%           0.000000                   0.000000           0.000000   
+50%           0.000000                   0.000000           0.000000   
+75%           0.000000                   0.000000           0.000000   
+max           1.000000                   1.000000           1.000000   
+
+       CC_Osteoporosis  CC_Schizophrenia    CC_Stroke     IP_Visits  \
+count     15000.000000        15000.0000  15000.00000  15000.000000   
+mean          0.024467            0.0094      0.03440      0.849733   
+std           0.154498            0.0965      0.18226      1.504871   
+min           0.000000            0.0000      0.00000      0.000000   
+25%           0.000000            0.0000      0.00000      0.000000   
+50%           0.000000            0.0000      0.00000      0.000000   
+75%           0.000000            0.0000      0.00000      1.000000   
+max           1.000000            1.0000      1.00000     11.000000   
+
+              Zip  
+count  15000.0000  
+mean   32191.3808  
+std      100.0895  
+min    32003.0000  
+25%    32095.0000  
+50%    32216.0000  
+75%    32233.0000  
+max    32656.0000  
+
+Updated: 2021-08-14 13:02:16.042249

@@ -1,0 +1,2 @@
+render(input = 'README', output_format = 'html_document',  output_file = paste('_docs/ER_page.html', sep = ''))
+render(input = 'README', output_format = 'word_document',  output_file = paste('_docs/ER_report.doc', sep = ''))

@@ -1,0 +1,30 @@
+fl_zips.csv Documentation
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1472 entries, 0 to 1471
+Data columns (total 6 columns):
+ #   Column     Non-Null Count  Dtype  
+---  ------     --------------  -----  
+ 0   City       1472 non-null   object 
+ 1   County     1472 non-null   object 
+ 2   Type       1472 non-null   object 
+ 3   Zip        1472 non-null   int64  
+ 4   latitude   1468 non-null   float64
+ 5   longitude  1468 non-null   float64
+dtypes: float64(2), int64(1), object(3)
+memory usage: 69.1+ KB
+
+
+Table name in `_data/project.db`: fl_zip
+
+                Zip     latitude    longitude
+count   1472.000000  1468.000000  1468.000000
+mean   33278.658967    28.128216   -81.967957
+std      790.635026     1.535014     1.601611
+min    32003.000000    24.567593   -87.478610
+25%    32625.750000    26.792054   -82.471688
+50%    33192.500000    28.067086   -81.723994
+75%    33846.250000    29.239137   -80.686159
+max    34997.000000    30.970853   -80.039370
+
+Updated: 2021-08-14 13:02:16.042249
