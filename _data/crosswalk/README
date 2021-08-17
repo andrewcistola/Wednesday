@@ -1,0 +1,17 @@
+# Healthy Neighborhoods Project
+## County-Zip Code Crosswalk File
+
+### About
+This directory contains files and colde to develop corsswalk files used to join different geographic layers.
+The crosswalk files contain various lables and IDs used for various sources. 
+Since zip codes and counties do not cleanly overalp, various files available from publicly available sources are used to create a key that can be used to join these two layers as best as possible.
+
+### Contents
+`D4D`           County and State labels in a single dataset available from "Data for Democracy"<br>
+`HUD`  	        Data from Dept. of Housing and Urbvan development that shows overlap fo zip codes with counties<br>
+`ZCTA_FIPS.py`    Python script used to pull data from various sources, clean, and export the FIPS_ZCTA crosswalk file<br>
+`ZCTA_FIPS.csv`	Crosswalk file that connects zip codes (table ID) with counties and states along with a variety of lables useful in joining with other sources and Census shapefiles<br>
+
+<break>
+Updated 8 Aug 2021 13:32 by drewc@allocativ.com
+<copywrite> allocativ 2021

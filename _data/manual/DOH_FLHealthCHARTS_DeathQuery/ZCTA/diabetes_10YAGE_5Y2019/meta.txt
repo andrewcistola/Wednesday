@@ -1,0 +1,13 @@
+Title	"Resident Deaths by Residence ZIP Code by County by 113 Causes of Death = Diabetes Mellitus (E10-E14) by Age Groups=25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+ Year=2015, 2016, 2017, 2018, 2019"
+Source	FLHealthCHARTS - Death Count Query System
+Link	http://www.flhealthcharts.com/charts/ReportCounter.aspx?datatype=death
+Author	Division of Public Health Statistics and Performance Management
+Organization	"Department of Health State of Florida, Bureau of Community Health Assessment"
+Accessed	8/7/21 14:04
+About	This data was collected from the FLHealthCHARTS - Death Count Query System  publically available at http://www.flhealthcharts.com/charts/ReportCounter.aspx?datatype=death. The data was queried by andrewcistola@ufl.edu and saved as DOH_FLHealthCHARTS_DeathQuery_ZCTA_diabetes_10YAGE_5Y2019 on 44415.5861111111. 
+Dictionary	http://www.flhealthcharts.com/FLQUERY_New/Documents/DeathQ_Data_Dictionary.pdf
+Reference	"Division of Public Health Statistics and Performance Management. Resident Deaths by Residence ZIP Code by County by 113 Causes of Death = Diabetes Mellitus (E10-E14) by Age Groups=25-34, 35-44, 45-54, 55-64, 65-74, 75-84, 85+ Year=2015, 2016, 2017, 2018, 2019. FLHealthCHARTS - Death Count Query System. Department of Health State of Florida, Bureau of Community Health Assessment. http://www.flhealthcharts.com/charts/ReportCounter.aspx?datatype=death. Accessed: 44415.5861111111"
+Availability	Public Access
+User	andrewcistola@ufl.edu
+File	DOH_FLHealthCHARTS_DeathQuery_ZCTA_diabetes_10YAGE_5Y2019
+Description	"This query generates all recorded deaths by the Florida Department of Health where Diabetes Mellitus (E10-E14) was listed as the primary cause of death collected by zip code of residence for the individual regardless of the place fo death. The query includes only deaths for residents of the state of Florida, individuals 25 and older, and the years 2015 to 2019. The deaths are also aggregated by 10 year age range for calculating age adjusted rates. This dataset is publicaly acceesible and available for dissemination."
