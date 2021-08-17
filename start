@@ -1,0 +1,59 @@
+install neville
+
+input 
+_env/path.py
+_vars/user
+_vars/project
+_vars/generic
+_data/_raw
+_data/_stage
+
+bash
+conda activate allocativ
+python3
+cd _env
+os.py
+path.py
+dir.py
+libs.py
+time.py
+funx.py
+
+cd _vars
+copy.py
+user.py
+project.py
+generic.py
+
+cd _data
+con.py
+private.py
+#public.py
+
+cd _docs
+README.py
+
+
+bash terminal home folder
+conda activate allocativ
+R
+cd _env
+libs.r
+dir.r
+
+cd _vars
+user.r
+project.r
+generic.r
+
+cd _data
+con.r
+
+cd _plot
+style.r
+
+cd _analyze
+stats.r
+
+cd _geo
+geocode.py
