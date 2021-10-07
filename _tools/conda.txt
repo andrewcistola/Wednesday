@@ -1,0 +1,9 @@
+# Conda
+
+## Environments
+conda activate allocativ_2.1
+
+## Install
+jupyter-notebook
+anaconda-navigator
+conda install <pkg>

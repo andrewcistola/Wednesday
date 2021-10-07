@@ -1,0 +1,73 @@
+# Microsoft
+
+## VS Code
+sudo snap install code --classic
+
+## GitHub
+sudo apt-get install git
+ssh-keygen -t rsa -b 4096 -C "andrewcistola@pm.me"
+sudo apt-get install xclip
+xclip -selection clipboard < ~/.ssh/id_rsa.pub
+git clone git@github.com:andrewcistola/allocativ.git
+
+## Edge
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main" > /etc/apt/sources.list.d/microsoft-edge-dev.list'
+sudo rm microsoft.gpg
+sudo apt update && sudo apt install microsoft-edge-beta
+
+## Windows Remote dekstop
+sudo apt install net-tools
+ifconfig # port forward in router 3389
+sudo apt install openssh-server
+sudo apt install xrdp
+sudo systemctl enable xrdp
+
+# Google
+
+## Chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+google-chrome
+
+## Google remote Desktop
+sudo wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+sudo dpkg --install chrome-remote-desktop_current_amd64.deb
+sudo apt install -y --fix-broken
+mkdir ~/.config/chrome-remote-desktop
+google-chrome
+https://remotedesktop.google.com/access
+sudo apt install lxde
+
+# Independent
+
+## Anaconda
+sudo apt install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+wget -P /tmp https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+bash /tmp/Anaconda3-2020.02-Linux-x86_64.sh
+conda update -n base -c defaults conda
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+conda config --show channels
+conda env create -f /home/drewc/GitHub/allocativ/allocativ.yml
+conda activate allocativ
+
+## Dropbox
+sudo apt install build-essential
+sudo apt autoremove
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+~/.dropbox-dist/dropboxd
+sudo wget -O /etc/systemd/system/dropbox@.service https://raw.githubusercontent.com/joeroback/dropbox/master/dropbox%40.service
+sudo systemctl enable dropbox@$(whoami)
+sudo systemctl start dropbox@$(whoami)
+sudo systemctl status dropbox@$(whoami)
+curl -LO https://www.dropbox.com/download?dl=packages/dropbox.py
+sudo mv dropbox.py /opt/
+sudo ln -s /opt/dropbox.py /usr/bin/dropbox
+sudo chmod +x /usr/bin/dropbox
+
+## Ubuntu
+
+### GNOME Tweak tool
+sudo apt-get install gnome-tweak-tool

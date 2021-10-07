@@ -1,0 +1,5 @@
+# Inner Join
+SELECT fldeath.Deaths, fldeath.Population, fldeath.mort
+FROM fldeath
+INNER JOIN fl.data 
+ON fldeath.fips = fl.GEOID'

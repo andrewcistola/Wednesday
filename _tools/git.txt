@@ -1,0 +1,26 @@
+# git
+
+## Checkout
+
+git pull origin master
+git merge FETCH_HEAD origin/master
+git add -A
+git commit -a -m "Neville Subproject start"
+git push origin master
+
+## Setup a new local GH repo with title <repo>
+
+cp -r template <repo>
+cd <repo>
+git init
+git lfs install
+git remote add origin https://github.com/andrewcistola/<repo>.git
+git add -A
+git commit -a -m "First Commit"
+git branch -M main
+git push origin master
+
+# Fix lfs push
+git rm path/to/file
+git commit -a -m "fix lfs push"
+git filter-branch --force --index-filter "git rm --cached --ignore-unmatch path/to/file" --prune-empty --tag-name-filter cat -- --all

@@ -1,0 +1,17 @@
+Powershell
+
+DIR # Show all files in current directory
+dir > listing.txt # Print list of files in directory
+cmd /r dir /b > filename.txt # Print list of files with names only in directory
+Get-ChildItem -Path C:\folder # Show files in folder
+Expand-Archive -LiteralPath C:\Users\drewc\Downloads\sqlite-tools-win32-x86-3300100.zip -DestinationPath C:\sqlite # Extract files from zipped folder to desitination
+START SQLiteStudio.exe # Open Program in folder
+
+
+SQLite
+
+C:\sqlite> sqlite3 # to open sqlite
+.help # show all commands
+.quit # to quit
+START C:\sqlite\SQLiteStudio\SQLiteStudio.exe # Open Program in folderTo open GUI\
+
